@@ -1,0 +1,471 @@
+*
+{
+    margin: 10;
+    padding: 0;
+    outline-style: none;
+}
+/*------------------Navbar----------------------*/
+.ml-auto, .mx-auto 
+{
+    margin-left: auto!important;
+}
+#Nav-Bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar
+{
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    padding: 0!important;
+}
+.navbar-brand
+{
+    height: 40px;
+    padding-left: 20px;
+    color: #ffffff !important;
+    font-weight: 600;
+    float: right;
+    padding:2px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    color: #ffffff !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars
+{
+    color:#ffffff;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*---------------Banner Section-------------------------*/
+#Banner
+{
+
+    background: linear-gradient(to right, #00C6A7 , #1E4D92 );
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    color: #ffffff;
+    padding:5px;
+}
+.Promo-Title
+{  
+     font-size: 35px;
+     font-weight: 600;
+     margin-top: 50px;
+}
+
+/*-----------Service Section----------------------*/
+#Services
+{
+    padding: 80px 0;  
+}
+.Services .bannericon
+{
+    font-size: 60px;
+    color: #039c85;
+    font-weight: 300px;
+    margin-top: 20px;
+}
+.Services
+{
+    padding: 20px;
+}
+.Services h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: Uppercase;
+}
+.title::before
+{
+    content:'';
+    background: linear-gradient(to right, #00C6A7 , #1E4D92 );
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after
+{
+    content:'';
+    background: linear-gradient(to right, #00C6A7 , #1E4D92);
+    height: 10px;
+    width: 50px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(7px);
+}
+#Services .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #00C6A7 , #1E4D92 );
+}
+#impbanner
+{
+    width: 95%;
+    height: 95%;
+    overflow: hidden;
+}
+
+
+/*---------------------Card------------------------------*/
+.color-white
+{
+    color: #ffffff;
+    
+}
+.flip-box
+{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 15px;
+
+}
+.flip-box-front,
+.flip-box-back
+{
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    min-height: 475px;
+    transition:transform 0.9s cubic-bezier(.4,.2,.2,1);
+    backface-visibility: hidden;
+}
+.flip-box-front
+{
+    transform:rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-front
+{
+    transform:rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+.flip-box-back
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+}
+.flip-box:hover .flip-box-back
+{
+    transform:rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box .inner
+{
+    position: absolute;
+    left:0;
+    width:100%;
+    padding:60px;
+    outline:1px solid transparent;
+    perspective: inherit;
+    z-index: 2;
+    transform: translateY(-50%)translateZ(60px) scale(.94);
+    top: 50%;
+}
+.flip-box-header
+{
+    font-size: 30px;
+}
+.flip-box p
+{
+    font-size: 20px;
+    line-height: 1.5rem;
+
+}
+.flip-box i
+{
+    margin-top: 25px;
+    font-size: 70px;
+}
+.flip-box-button
+{
+    background-color: transparent;
+    border:2px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+/*---------------------Card END------------------------------*/
+/*--------------Enquiry Page-----------------------*/
+/*-----Contact US----*/
+.contact
+{
+   background-color: #ebf2f2;
+}
+.contact .content
+{
+    text-align: center;
+    padding:10px;
+    padding-top: 20px;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+}
+.icon 
+{
+    font-size: 35px;
+}
+/*----------GET IN TOUCH----------------*/
+.get_in_touch
+{
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0.1);
+    padding: 50px;
+}
+.get_in_touch .EnquiryTitle
+{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: #1E4D92;
+    background: linear-gradient(to right, #00C6A7 , #1E4D92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-form .form-field
+{
+    position: relative;
+    margin: 32px 0;
+}
+.contact-form .input-text
+{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #1E4D92;
+    line-height: 26px;
+    font-weight: 400;
+
+}
+.contact-form .input-text:focus + .label,.contact-form .input-text.not-empty + .label, .contact-form .input-text:valid + .label
+{
+    transform: translateY(-24px);
+}
+.contact-form .input-text:focus
+{
+    outline: none;
+}
+.contact-form .label
+{
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #1E4D92;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn
+{
+    display: inline-block;
+    background: linear-gradient(to right, #00C6A7 , #1E4D92);
+    color:#ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 25px;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+}
+.contact-form .submit-btn:hover, .btn-primary:hover
+{
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px rgba(24, 21, 21, 0.8);
+}
+
+/*--------------Enquiry Page END-----------------------*/
+/*----------------Upward button ----------*/
+#topBtn
+{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    display: none;
+}
+.scrollup .active
+{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(-55px);
+}
+/*--------------Footer Start---------------*/
+footer
+{
+    background: #111;
+    position: relative;
+    height: auto;
+    padding:50px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+footer .container h2
+{
+    position: relative;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+}
+footer .container  h2:before
+{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+
+}
+footer p
+{
+    color: #999999;
+}
+.sci 
+{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+}
+.sci li a
+{
+    text-decoration: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.sci li a:hover
+{
+    background: #ff0000;
+}
+.sci li a .fa
+{
+    color: #ffffff;
+    font-size: 20px;
+}
+.quickLinks
+{
+    transform: translateX(40px);
+}
+.quickLinks ul li
+{
+    list-style: none;
+}
+.quickLinks ul li a
+{
+    color: #999999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover
+{
+    color: #ffffff;
+}
+
+.contactfoot .info li
+{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contactfoot .info li span:nth-child(1)
+{
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contactfoot .info li span
+{
+    color: #999999;
+}
+.contactfoot .info li a
+{
+    text-decoration: none;
+    color: #999999;
+}
+.contactfoot .info li a:hover
+ {
+    color: #ffffff;
+ }
+ .copyright
+ {
+     width: 100%;
+     background: #181818;
+     padding: 8px 100px;
+     text-align: center;
+     color: #999;
+ }
+
